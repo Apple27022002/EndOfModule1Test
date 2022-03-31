@@ -11,7 +11,7 @@ function giaiPhuongTrinhBacNhat(a, b) {
     }
 }
 
-document.write("Câu 1: " + giaiPhuongTrinhBacNhat(5, 8) + "<br>");
+document.write("Bai 1 la: " + giaiPhuongTrinhBacNhat(5, 8) + "<br>");
 
 
 
@@ -34,7 +34,7 @@ function timViTriTrongMang(arrk, x) {
     }
 }
 
-document.write("Câu 2: " + timViTriTrongMang(arrk, 1) + "<br>");
+document.write("Ket qua: " + timViTriTrongMang(arrk, 1) + "<br>");
 
 
 
@@ -44,7 +44,7 @@ document.write("Câu 2: " + timViTriTrongMang(arrk, 1) + "<br>");
 
 //bai 3
 let soKiemTra = prompt("Nhap ky tu can kiem tra");
-let arrb = inp.split("");
+let arrb = soKiemTra.split("");
 
 function demNguyenAm(soKiemtra) {
     let count = 0;
@@ -54,12 +54,12 @@ function demNguyenAm(soKiemtra) {
         }
     }
     if (count === 0) {
-        return false;
+        return "Khong co chu nguyen am trong chuoi";
     }
-    return "So nguyen am trong chuoi la: " + count;
+    return "Chu nguyen am trong chuoi la: " + count;
 }
 
-document.write("Câu 3: " + demNguyenAm(arrb) + "<br>");
+document.write("Bai 3 la: " + demNguyenAm(arrb) + "<br>");
 
 
 
@@ -96,7 +96,8 @@ objAnimal1.setName("Elephant");
 objAnimal1.setWeight(45.6);
 let result = objAnimal1.toString();
 document.write(result);
-let objAnimal2 = new Animal("Cat",1);
+let objAnimal2 = new Animal("Mickey",1);
 objAnimal2.setName("Mouse");
 let c = objAnimal2.getName();
-document.write(c);
+document.write(c +' la ten duoc thay the ');
+
