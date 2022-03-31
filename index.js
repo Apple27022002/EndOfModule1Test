@@ -11,7 +11,7 @@ function giaiPhuongTrinhBacNhat(a, b) {
     }
 }
 
-document.write("Bai 1 la: " + giaiPhuongTrinhBacNhat(5, 8) + "<br>");
+console.log("Bai 1 la: " + giaiPhuongTrinhBacNhat(5, 8) + "<br>");
 
 
 
@@ -34,9 +34,7 @@ function timViTriTrongMang(arrk, x) {
     }
 }
 
-document.write("Ket qua: " + timViTriTrongMang(arrk, 1) + "<br>");
-
-
+console.log("Ket qua: " + timViTriTrongMang(arrk, 1) + "<br>");
 
 
 
@@ -59,7 +57,7 @@ function demNguyenAm(soKiemtra) {
     return "Chu nguyen am trong chuoi la: " + count;
 }
 
-document.write("Bai 3 la: " + demNguyenAm(arrb) + "<br>");
+console.log("Bai 3 la: " + demNguyenAm(arrb) + "<br>");
 
 
 
@@ -95,9 +93,9 @@ let objAnimal1 = new Animal();
 objAnimal1.setName("Elephant");
 objAnimal1.setWeight(45.6);
 let result = objAnimal1.toString();
-document.write(result);
+console.log(result);
 let objAnimal2 = new Animal("Mickey",1);
 objAnimal2.setName("Mouse");
 let c = objAnimal2.getName();
-document.write(c +' la ten duoc thay the ');
+console.log(c +' la ten duoc thay the ');
 
